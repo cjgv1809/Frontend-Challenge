@@ -1,0 +1,33 @@
+nav {
+  background: #222;
+  padding: 10px 20px;
+  margin-bottom: 45px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+a:hover {
+  text-decoration: underline;
+}
+.Navbar__logo {
+  transition: 500ms ease-in-out;
+}
+.Navbar__logo a img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 5px white;
+}
+.Navbar__menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+}
+.logo a {
+  font-size: 20px;
+}

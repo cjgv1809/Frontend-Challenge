@@ -1,0 +1,109 @@
+.image__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 45px;
+}
+
+.image__container--disabled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 45px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.image__media > figure > img {
+  height: 300px;
+  max-width: 300px;
+  object-fit: contain;
+  border: 1px solid whitesmoke;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+
+.image__media > figure {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+}
+
+.image__media > figure > figcaption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.image__media > figure > img:hover {
+  opacity: 0.5;
+}
+
+.image__modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  padding: 45px;
+  z-index: 10;
+  width: 90%;
+  height: auto;
+}
+
+.image__closeIcon {
+  position: absolute;
+  right: 45px;
+  top: 15px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.image__texts {
+  margin: 25px;
+  text-align: justify;
+  color: whitesmoke;
+  width: 100%;
+  height: 300px;
+}
+
+.image__texts > h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.image__texts > p {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .image__texts > h1 {
+    font-size: 1.3rem;
+  }
+  .image__texts > p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image__container,
+  .image__container--disabled {
+    flex-direction: column;
+  }
+  .image__media > img {
+    width: 300px;
+    height: auto;
+  }
+  .image__texts {
+    width: 300px;
+    height: auto;
+  }
+}
